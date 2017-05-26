@@ -1,0 +1,9 @@
+/* CSS for LearningDiary */
+
+.learningdiary_block .count {
+    font-weight: bold;
+}
+
+.learningdiary_block p {
+    cursor: pointer;
+}
