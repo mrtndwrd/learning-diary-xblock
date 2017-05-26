@@ -1,4 +1,4 @@
-FROM xblock-sdk
+FROM jbarciauskas/xblock-sdk
 RUN mkdir -p /usr/local/src/learning-diary-xblock
 VOLUME ["/usr/local/src/learning-diary-xblock"]
 RUN echo "pip install -e /usr/local/src/learning-diary-xblock" >> /usr/local/src/xblock-sdk/install_and_run_xblock.sh
