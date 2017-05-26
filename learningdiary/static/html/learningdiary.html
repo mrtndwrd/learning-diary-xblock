@@ -1,5 +1,25 @@
 <div class="learningdiary_block">
-<p>LearningDiary: count is now
-    <span class='count'>{self.count}</span> (click me to increment).
+<p>LearningDiary: count is now 
+    <span class='count'>{{count}}</span> (click me to increment).
 </p>
+<div>
+  {% with self.block_ref as name %}
+  <h3>Your Current Entry for {{diary_entry}}:</h3>
+  <form>
+    <textarea id="diary_txtinput" rows="10" cols="50">
+      {{diary_entry}}
+    </textarea>
+    <div><input type="button" id="mybtn" value="Save"></div>
+  </form>
+
+  <h3>All your other entries:</h3>
+  <div id="allentries">
+    <ul>
+    {% for key, value in entries.items  %}
+      <li>{{ value }}</li>
+    {% endfor %}
+    </ul>
+  </div>
+  {% endwith %}
+</div>
 </div>
