@@ -4,11 +4,9 @@
 </p>
 <div>
   {% with self.block_ref as name %}
-  <h3>Your Current Entry for {{diary_entry}}:</h3>
+  <h3>Your Current Entry for {{block_ref}}:</h3>
   <form>
-    <textarea id="diary_txtinput" rows="10" cols="50">
-      {{diary_entry}}
-    </textarea>
+    <textarea id="diary_txtinput" rows="10" cols="50">{{diary_entry}}</textarea>
     <div><input type="button" id="mybtn" value="Save"></div>
   </form>
 
